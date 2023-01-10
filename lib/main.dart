@@ -240,36 +240,66 @@
 // }
 
 //===================Cards==============================
-import 'dart:collection';
-import 'package:flutter/material.dart';
+// import 'dart:collection';
+// import 'package:flutter/material.dart';
+// import 'quote.dart';
 
-void main() => runApp(MaterialApp(
-      home: QuoteList(),
-    ));
+// void main() => runApp(MaterialApp(
+//       home: QuoteList(),
+//     ));
 
-class QuoteList extends StatefulWidget {
-  @override
-  _MyWidgetState createState() => _MyWidgetState();
-}
+// class QuoteList extends StatefulWidget {
+//   @override
+//   _MyWidgetState createState() => _MyWidgetState();
+// }
 
-class _MyWidgetState extends State<QuoteList> {
-  List<String> quotes = [
-    "Hello Mallikarjun Mashalkar",
-    "Im From Gulbarga Dis. Karnataka",
-    "I have a Software Developer",
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[200],
-      appBar: AppBar(
-        title: Text("Aowsome QuoteList"),
-        centerTitle: true,
-        backgroundColor: Colors.redAccent,
-      ),
-      body: Column(
-        children: quotes.map((quote) => Text(quote)).toList(),
-      ),
-    );
-  }
-}
+// class _MyWidgetState extends State<QuoteList> {
+//   List<Quote> quotes = [
+//     Quote(author: "Mallikarjun", text: "Hello Mallikarjun Mashalkar"),
+//     Quote(author: "Mallikarjun", text: "Im From Gulbarga Dis. Karnataka"),
+//     Quote(author: "Mallikarjun", text: "I have a Software Developer"),
+//   ];
+
+//   Widget quoteTemplate(quote) {
+//     return Card(
+//       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
+//       child: Padding(
+//         padding: const EdgeInsets.all(12.0),
+//         child: Column(
+//             crossAxisAlignment: CrossAxisAlignment.stretch,
+//             children: <Widget>[
+//               Text(
+//                 quote.text,
+//                 style: TextStyle(fontSize: 18.0, color: Colors.grey[600]),
+//               ),
+//               SizedBox(height: 6.0),
+//               Text(
+//                 quote.author,
+//                 style: TextStyle(fontSize: 14.0, color: Colors.grey[800]),
+//               ),
+//               SizedBox(height: 8.0),
+//               FlatButton.icon(  // Error
+//                 onPressed: () {},
+//                 lable: Text("delete quote"),
+//                 icon: Icon(Icons.delete),
+//               ),
+//             ]),
+//       ),
+//     );
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.grey[200],
+//       appBar: AppBar(
+//         title: Text("Aowsome QuoteList"),
+//         centerTitle: true,
+//         backgroundColor: Colors.redAccent,
+//       ),
+//       body: Column(
+//         children: quotes.map((quote) => quoteTemplate(quote)).toList(),
+//       ),
+//     );
+//   }
+// }
