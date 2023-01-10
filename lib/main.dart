@@ -240,36 +240,36 @@
 // }
 
 //===================Cards==============================
-import 'dart:collection';
-import 'package:flutter/material.dart';
+// import 'dart:collection';
+// import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-      home: QuoteList(),
-    ));
+// void main() => runApp(MaterialApp(
+//       home: QuoteList(),
+//     ));
 
-class QuoteList extends StatefulWidget {
-  @override
-  _MyWidgetState createState() => _MyWidgetState();
-}
+// class QuoteList extends StatefulWidget {
+//   @override
+//   _MyWidgetState createState() => _MyWidgetState();
+// }
 
-class _MyWidgetState extends State<QuoteList> {
-  List<String> quotes = [
-    "Hello Mallikarjun Mashalkar",
-    "Im From Gulbarga Dis. Karnataka",
-    "I have a Software Developer",
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[200],
-      appBar: AppBar(
-        title: Text("Aowsome QuoteList"),
-        centerTitle: true,
-        backgroundColor: Colors.redAccent,
-      ),
-      body: Column(
-        children: quotes.map((quote) => Text(quote)).toList(),
-      ),
-    );
-  }
-}
+// class _MyWidgetState extends State<QuoteList> {
+//   List<String> quotes = [
+//     "Hello Mallikarjun Mashalkar",
+//     "Im From Gulbarga Dis. Karnataka",
+//     "I have a Software Developer",
+//   ];
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.grey[200],
+//       appBar: AppBar(
+//         title: Text("Aowsome QuoteList"),
+//         centerTitle: true,
+//         backgroundColor: Colors.redAccent,
+//       ),
+//       body: Column(
+//         children: quotes.map((quote) => Text(quote)).toList(),
+//       ),
+//     );
+//   }
+// }
